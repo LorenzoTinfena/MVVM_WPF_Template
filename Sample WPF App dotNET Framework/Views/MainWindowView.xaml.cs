@@ -15,14 +15,27 @@ using System.Windows.Shapes;
 
 namespace Sample_WPF_App_dotNET_Framework.Views
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
-    public partial class MainWindowView : Window
+    internal partial class MainWindowView : Window
     {
         public MainWindowView()
         {
             InitializeComponent();
+        }
+    }
+
+    internal static class Log
+    {
+        public static void Standard(object e, bool crash = false)
+        {
+            throw new NotImplementedException();
+        }
+        public static void Warning(object e, bool crash = false)
+        {
+            throw new NotImplementedException();
+        }
+        public static void Error(object e, bool crash = false)
+        {
+            throw new NotImplementedException();
         }
     }
 }

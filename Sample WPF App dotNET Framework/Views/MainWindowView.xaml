@@ -6,12 +6,13 @@
         xmlns:local="clr-namespace:Sample_WPF_App_dotNET_Framework.Views"
         xmlns:vm="clr-namespace:Sample_WPF_App_dotNET_Framework.ViewModels"
         mc:Ignorable="d"
+        x:ClassModifier="internal"
         Title="MainWindowView" Height="450" Width="800">
     <Window.DataContext>
         <vm:MainWindowViewModel/>
     </Window.DataContext>
     <Grid>
-        <TextBox Text="{Binding Path=Titolo, Mode=TwoWay}"></TextBox>
+        <TextBox Text="{Binding Path=Title, Mode=TwoWay}"></TextBox>
         <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="198,141,0,0" TextWrapping="Wrap" Text="{Binding Titolo}" VerticalAlignment="Top"/>
     </Grid>
 </Window>

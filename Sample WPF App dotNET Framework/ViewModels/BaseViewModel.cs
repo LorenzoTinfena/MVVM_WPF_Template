@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Sample_WPF_App_dotNET_Framework.ViewModels
 {
-    public abstract class BaseViewModel : INotifyPropertyChanged
+    internal abstract class BaseViewModel : INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged;
         protected void NotifyPropertyChanged([CallerMemberName] string propertyName = "")
