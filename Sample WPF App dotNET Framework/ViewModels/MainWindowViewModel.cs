@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Sample_WPF_App_dotNET_Framework.ViewModels
 {
-    internal class MainWindowViewModel : BaseViewModel
+    public class MainWindowViewModel : BaseViewModel
     {
         public MainWindowViewModel()
         {

@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:Sample_WPF_App_dotNET_Framework.Views"
         xmlns:vm="clr-namespace:Sample_WPF_App_dotNET_Framework.ViewModels"
         mc:Ignorable="d"
-        x:ClassModifier="internal"
+        x:ClassModifier="public"
         Title="MainWindowView" Height="450" Width="800">
     <Window.DataContext>
         <vm:MainWindowViewModel/>

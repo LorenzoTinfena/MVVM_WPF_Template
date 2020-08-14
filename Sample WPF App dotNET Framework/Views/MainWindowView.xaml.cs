@@ -15,27 +15,32 @@ using System.Windows.Shapes;
 
 namespace Sample_WPF_App_dotNET_Framework.Views
 {
-    internal partial class MainWindowView : Window
+    public partial class MainWindowView : Window
     {
         public MainWindowView()
         {
             InitializeComponent();
         }
     }
-
-    internal static class Log
+    public static class Log
     {
-        public static void Standard(object e, bool crash = false)
+        public enum LogType
         {
-            throw new NotImplementedException();
+            Standard,
+            Warning,
+            Error
         }
-        public static void Warning(object e, bool crash = false)
+        public static event Action<object, Log.LogType> LogHandler;
+        private static void Logger(object e, bool crash, Log.LogType type)
         {
-            throw new NotImplementedException();
+            LogHandler(e, type);
+            if (crash)
+                throw new Exception(e.ToString());
         }
-        public static void Error(object e, bool crash = false)
-        {
-            throw new NotImplementedException();
-        }
+        #region public functions
+        public static void Standard(object e, bool crash = false) => Logger(e, crash, Log.LogType.Standard);
+        public static void Warning(object e, bool crash = false) => Logger(e, crash, Log.LogType.Warning);
+        public static void Error(object e, bool crash = false) => Logger(e, crash, Log.LogType.Error);
+        #endregion
     }
 }
