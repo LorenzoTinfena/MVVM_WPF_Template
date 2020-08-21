@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Windows;
 
 namespace MVVM_WPF_Template.Views
 {
@@ -19,13 +18,16 @@ namespace MVVM_WPF_Template.Views
             Warning,
             Error
         }
+
         public static event Action<object, Log.LogType> LogHandler;
+
         private static void Logger(object e, bool crash, Log.LogType type)
         {
             LogHandler(e, type);
             if (crash)
-                throw new System.Exception(e.ToString());
+                throw new Exception(e.ToString());
         }
+
         #region public functions
         public static void Standard(object e, bool crash = false) => Logger(e, crash, Log.LogType.Standard);
         public static void Warning(object e, bool crash = false) => Logger(e, crash, Log.LogType.Warning);
