@@ -1,8 +1,8 @@
-﻿<Application x:Class="Sample_WPF_App_dotNET_Framework.App"
+﻿<Application x:Class="MVVM_WPF_Template.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:Sample_WPF_App_dotNET_Framework">
+             xmlns:local="clr-namespace:MVVM_WPF_Template">
     <Application.Resources>
-
+         
     </Application.Resources>
 </Application>

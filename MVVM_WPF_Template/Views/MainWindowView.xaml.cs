@@ -1,27 +1,16 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
-namespace Sample_WPF_App_dotNET_Framework.Views
+namespace MVVM_WPF_Template.Views
 {
-    public partial class MainWindowView : Window
+    public partial class MainWindowView : System.Windows.Window
     {
         public MainWindowView()
         {
             InitializeComponent();
         }
     }
+
     public static class Log
     {
         public enum LogType
@@ -35,7 +24,7 @@ namespace Sample_WPF_App_dotNET_Framework.Views
         {
             LogHandler(e, type);
             if (crash)
-                throw new Exception(e.ToString());
+                throw new System.Exception(e.ToString());
         }
         #region public functions
         public static void Standard(object e, bool crash = false) => Logger(e, crash, Log.LogType.Standard);

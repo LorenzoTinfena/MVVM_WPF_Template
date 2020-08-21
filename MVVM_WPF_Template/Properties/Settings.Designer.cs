@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Sample_WPF_App_dotNET_Framework.Properties
+namespace MVVM_WPF_Template.Properties
 {
 
 
