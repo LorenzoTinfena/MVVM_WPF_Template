@@ -1,4 +1,6 @@
-﻿namespace MVVM_WPF_Template.ViewModels
+﻿using System.Runtime.CompilerServices;
+
+namespace MVVM_WPF_Template.ViewModels
 {
     public class MainWindowViewModel : BaseViewModel
     {
