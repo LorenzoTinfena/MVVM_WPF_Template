@@ -1,6 +1,6 @@
 ﻿using System.Windows;
 
-namespace MVVM_WPF_Template
+namespace Wpf_dotNet_mvvm_template
 {
     public partial class App : Application
     {

@@ -1,10 +1,10 @@
-﻿<Window x:Class="MVVM_WPF_Template.Views.MainWindowView"
+﻿<Window x:Class="Wpf_dotNet_mvvm_template.Views.MainWindowView"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:MVVM_WPF_Template.Views"
-        xmlns:vm="clr-namespace:MVVM_WPF_Template.ViewModels"
+        xmlns:local="clr-namespace:Wpf_dotNet_mvvm_template.Views"
+        xmlns:vm="clr-namespace:Wpf_dotNet_mvvm_template.ViewModels"
         mc:Ignorable="d"
         x:ClassModifier="public"
         Title="MainWindowView" Height="450" Width="800">

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Input;
 
-namespace MVVM_WPF_Template.ViewModels
+namespace Wpf_dotNet_mvvm_template.ViewModels
 {
     public class RelayCommand : ICommand
     {

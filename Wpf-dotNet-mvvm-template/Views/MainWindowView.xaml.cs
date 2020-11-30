@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace MVVM_WPF_Template.Views
+﻿namespace Wpf_dotNet_mvvm_template.Views
 {
     public partial class MainWindowView : System.Windows.Window
     {
